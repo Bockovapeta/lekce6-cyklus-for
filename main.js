@@ -3,12 +3,21 @@
 
 
 // První příklad - vypiš vzestupně čísla od 0 do 10
-console.log('První příklad - vzestupná řada 0 - 10');
-
+console.log('První příklad - vzestupně řada 0 až 10');
 //TADY NAPIS CYKLUS
 
-console.log('-------------------');
 
+for (let i = 0; i <= 10; i++) {
+    console.log(i);
+}
+
+console.log('První příklad - použití while');
+
+let i = 0
+while (i < 10) {
+    i++;
+    console.log(i);
+}
 
 
 // Druhý příklad - zkopíruj předchozí příklad
@@ -19,7 +28,17 @@ console.log('Druhý příklad - rozdíl mezi <= a <');
 
 //TADY NAPIS CYKLUS
 
-console.log('-------------------');
+for (let k = 0; k < 10; k++) {
+    console.log(k);
+}
+
+console.log('Druhý příklad - použití while');
+
+let k = 0
+while (k < 10) {
+    k++;
+    console.log(k);
+}
 
 
 
@@ -27,40 +46,15 @@ console.log('-------------------');
 console.log('Třetí příklad - sestupná řada 10 - 0');
 
 //TADY NAPIS CYKLUS
-
-console.log('-------------------');
-
-
-
-
-/*
-
-let a = 0;
-while (a < 10) {
-    console.log(a);
-    a++;
+for (let j = 10; j >= 0; j--) {
+    console.log(j);
 }
 
+console.log('Třetí příklad - použití while');
 
+let j = 11;
+while (j > 0) {
 
-
-function test() {
-    console.log("před cyklem");
-    for (let i = 0; i < 10; i = i + 1) {
-        if (i > 10) { break; }
-        console.log(i);
-    }
-    console.log("za cyklem");
+    j--;
+    console.log(j);
 }
-
-
-
-let castTela = ["h", "l", "a", "v", "a"];
-
-while (castTela.length > 3) {
-    castTela.pop();
-    console.log(castTela);
-
-}
-
-*/
